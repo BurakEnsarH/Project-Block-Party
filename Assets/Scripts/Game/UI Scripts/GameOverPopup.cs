@@ -6,7 +6,6 @@ public class GameOverPopup : MonoBehaviour
 {
     public GameObject gameOverPopup;
     public GameObject loosePopup;
-    public GameObject newBestScorePopup;
 
     void Start()
     {
@@ -26,8 +25,7 @@ public class GameOverPopup : MonoBehaviour
     private void OnGameOver(bool newBestScore)
     {
         gameOverPopup.SetActive(true);
-        loosePopup.SetActive(false);
-        newBestScorePopup.SetActive(true);
+        loosePopup.SetActive(true);
     }
 
 }
